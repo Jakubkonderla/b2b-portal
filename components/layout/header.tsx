@@ -34,7 +34,7 @@ export function Header() {
 
   return (
     <>
-      <header className="flex md:hidden h-16 shrink-0 items-center justify-between border-b border-border bg-background px-4">
+      <header className="flex lg:hidden h-16 shrink-0 items-center justify-between border-b border-border bg-background px-4">
         <div className="flex items-center gap-2">
           <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
             <span className="text-primary-foreground font-bold text-xl">B</span>
@@ -48,7 +48,7 @@ export function Header() {
 
       {/* Mobile drawer overlay */}
       {isOpen && (
-        <div className="fixed inset-0 z-50 flex md:hidden">
+        <div className="fixed inset-0 z-50 flex lg:hidden">
           <div 
             className="fixed inset-0 bg-background/80 backdrop-blur-sm transition-opacity"
             onClick={() => setIsOpen(false)}

@@ -21,8 +21,14 @@ export function SpendingChart() {
                   style={{ height: '4px' }}
                 />
                 
-                {/* Tooltip */}
-                <div className="opacity-0 group-hover:opacity-100 absolute -top-10 left-1/2 -translate-x-1/2 bg-card text-card-foreground text-xs py-1 px-2 rounded shadow-md whitespace-nowrap transition-opacity pointer-events-none z-10 border border-border">
+                {/* Mobile permanent label */}
+                <div className="lg:hidden absolute -top-10 left-1/2 -translate-x-1/2 text-[10px] leading-none text-foreground font-medium text-center">
+                  <div>{new Intl.NumberFormat('cs-CZ').format(data.amount)}</div>
+                  <div className="text-[9px] text-muted-foreground mt-0.5">Kč</div>
+                </div>
+
+                {/* Desktop Tooltip */}
+                <div className="hidden lg:block opacity-0 group-hover:opacity-100 absolute -top-10 left-1/2 -translate-x-1/2 bg-card text-card-foreground text-xs py-1 px-2 rounded shadow-md whitespace-nowrap transition-opacity pointer-events-none z-10 border border-border">
                   {new Intl.NumberFormat('cs-CZ', { style: 'currency', currency: 'CZK', maximumFractionDigits: 0 }).format(data.amount)}
                 </div>
               </div>

@@ -18,7 +18,7 @@ export function Sidebar() {
   const { logout } = useAuth();
 
   return (
-    <div className="hidden md:flex h-full w-64 flex-col border-r border-border bg-card">
+    <div className="hidden lg:flex h-full w-64 flex-col border-r border-border bg-card">
       <div className="flex h-16 shrink-0 items-center px-6">
         <div className="flex items-center gap-2">
           <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
