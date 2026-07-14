@@ -22,7 +22,7 @@ export interface Ticket {
 export const metrics = {
   totalSpent: 1250000,
   activeProjects: 3,
-  unpaidInvoices: 2,
+  unpaidInvoices: 1,
 };
 
 export const projects: Project[] = [
