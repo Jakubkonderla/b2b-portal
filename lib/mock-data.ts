@@ -43,7 +43,7 @@ export const tickets: Ticket[] = [
 ];
 
 export const monthlySpending = [
-  { month: "Led", amount: 45000 },
+  { month: "Led", amount: 15000 },
   { month: "Úno", amount: 52000 },
   { month: "Bře", amount: 38000 },
   { month: "Dub", amount: 65000 },
